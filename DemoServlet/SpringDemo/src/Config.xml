@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+<bean id="emp" class="com.wipro.bean.Employee"  autowire="byType"> 
+
+<constructor-arg index="0" value="301"></constructor-arg>
+<constructor-arg index="1" value="Adam"></constructor-arg>
+<constructor-arg index="2">
+ <ref bean="address"/>
+</constructor-arg>
+</bean>
+
+<bean id="address" class="com.wipro.bean.Address">
+<constructor-arg index="0" value="Wipro st"></constructor-arg>
+<constructor-arg index="1" value="Chennai"></constructor-arg>
+</bean>
+
+<bean id="add2" class="com.wipro.bean.Address">
+<constructor-arg index="0" value="Wipro st"></constructor-arg>
+<constructor-arg index="1" value="Chennai"></constructor-arg>
+</bean>
+
+<!-- <property name="empid" value ="201"></property>
+<property name="ename" value="Seetha"></property> -->
+
+
+
+</beans>
