@@ -1,0 +1,37 @@
+Mr ABC is required to simulate a train ticketing system which will take care of confirmed tickets, general waiting, tatkal waiting etc. Which is the best collection that can be used by Mr ABC.
+ a) ArrayList
+ b) LinkedList
+ c) PriorityQueue
+
+
+Mr ABC wants to create an application that  accepts multiple names and maintains a list of only unique names among all inputs entered. 
+a) ArrayList
+b)HashSet
+c) TreeSet
+
+Also, the application should have min access time to get values from this collection created.
+ a) HashSet
+ b) TreeSet
+ c) LinkedHashSet
+
+Mr Xyz is okay on compromising the access time but requires very  frequent insertion and deletion.
+ 
+a) HashSet
+ b) TreeSet
+ c) LinkedHashSet
+
+To this application created, mr ABC wants to modify the code to display names in sorted order .
+
+a) HashSet
+b) TreeSet
+c) LinkedHashSet
+
+What if Mr ABC decides to store names in reverse sorted order? Is that possible with any existing data structure? 
+
+Mr ABC now wants to create a Person database where person details are sorted by his aadhar_no. Which collection is best suited for it? Which method needs to be overriden for the same.
+
+Mr ABC is required to simulate currency dispenser based on the denominations(highest to lowest). Which collection can be used by him?
+
+a) ArrayList
+b) HashMap
+c) TreeMap

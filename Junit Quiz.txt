@@ -1,0 +1,48 @@
+1) JUnit is a used by testing team to perform integration testing.
+
+2) we can have multiple test methods in a test case
+
+3) we can test multiple methods in  a test method.
+
+4) A test method can only have one assert statement.
+
+5) Junit test passes if atleast one test method gets passed.
+6) Consider the method given below:
+	public class Employee {
+	public String getEmployeeName() {
+	String name="Sophia";
+	return name;
+	}
+	 }
+   Let us test this method with the following:
+	@Test
+	public void testEmployeeName() {
+	String resultName="Sophia";
+	assertSame("Unable to get expected name" , 	resultName, new Employee().getEmployeeName	());
+	}
+
+7) Lets say I have a method that returns an array of    Student objects as shown below:
+	public Student[] getStudArray(){}
+	{ Student[] s = new Student[2];
+		s[0]= new Student(101, "Sureka");
+		s[1]= new Student(102,"Suresh");
+}
+
+Let us say I have a test method as follows:
+
+	@Test
+	public void testStudentArray(){
+	Student[] s1 = new Student[2];
+		s1[0]= new Student(101, "Sureka");
+		s1[1]= new Student(102,"Suresh");
+	assertArrayEquals(s1, new TestStudent	().getStudArray())
+	}
+ Is assertArrayEquals going to return true?
+
+8) can we change access specfier for test methods? 
+9) can we add arguments in test methods?
+10) fail() method fails the test case even when all      other test methods pass.
+11) @Ignore fails the test method.
+12) test methods annotated with @BeforeClass and @AfterClass should be static
+
+	

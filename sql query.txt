@@ -1,0 +1,23 @@
+
+
+create table book_tbl (  isbn varchar2(10) primary key, 
+                           book_title varchar2(10) not null ,
+                           book_type varchar2(1),
+                           author_code number(5) ,
+                           book_cost number(8,2)      );
+
+
+
+create table author_tbl (   author_code number(5) ,
+                            author_name varchar2(20),
+                            contact_no number(10) ) ;
+
+
+insert into author_tbl values(10001 , 'subash', 9123456789) ;
+
+insert into author_tbl values(10002 , 'Ayyappan', 999999990) ;
+ 
+
+insert into book_tbl values('ISBN1' ,'Progra C','G',10001,500.50 ) ;
+insert into book_tbl values('ISBN2' ,'Python','G',10001,300.00 ) ;
+insert into book_tbl values('ISBN3' ,'Java pgm','G',10002,200.00 ) ;

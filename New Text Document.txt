@@ -1,0 +1,23 @@
+import java.io.*;
+import  java.util.*;
+
+// Read only region start
+class UserMainCode
+{
+
+	public int totalHillWeight(int input1,int input2,int input3){
+		// Read only region end
+		// Write code here...
+		 int sum=0;
+	for(int i = 1,p =input2 ;i <= input1; i++, p = p+input3)
+		{
+			for(int j = 1 ; j<=i ; j++)
+				
+				{ 
+				  sum=sum+p;
+				}
+		
+           }
+	return sum;
+}
+	}
