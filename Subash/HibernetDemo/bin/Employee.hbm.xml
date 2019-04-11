@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+  <hibernate-mapping>
+  <class name="com.wipro.entity.Employee" table="emp123"> 
+ 
+  <id name="empNo" column="eNo" type="int" length="4"> 
+ <generator class="sequence">
+ 
+ <param name="sequence">Empseq</param> 
+ 
+ </generator> 
+  </id>
+  
+  <property name="empName" column="eName" type="string" length="20"></property> 
+  <property name="empGender" column="eGender" type="char" length="1"></property> 
+  <property name="empDoj" column="eDoj" type="date" ></property> 
+   <property name="empSalary" column="eSalary" type="double"> </property> 
+    
+  </class>
+  
+  
+  </hibernate-mapping>

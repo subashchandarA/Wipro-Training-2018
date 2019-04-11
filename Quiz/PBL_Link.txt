@@ -1,0 +1,9 @@
+Project Document Link
+http://10.201.67.120:8080/pbl/Tpl/index.htm
+
+PBL App:
+http://10.201.174.55:8080/PBLApp
+
+Shared Folder:
+
+\\10.201.172.32\TalentNext_Batch2

@@ -1,0 +1,6 @@
+create procedure updateDept(p_loc varchar2,p_dno number)
+as
+begin
+update dept set loc=p_loc where deptno=p_dno;
+end;
+/
